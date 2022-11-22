@@ -1,4 +1,4 @@
-#@Smoke @TimeEntry
+@Smoke @TimeEntry
 Feature: Time Entries
 
   Background:
