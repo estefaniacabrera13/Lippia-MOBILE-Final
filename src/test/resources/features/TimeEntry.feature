@@ -4,9 +4,10 @@ Feature: Time Entries
   Background:
     Given The app is loaded correctly
     And The user is logued with email 'pruebaqamanual@gmail.com' and password 'Crowdar2022'
-    And Clicks on the plus button
+
 
   Scenario Outline: Successful Time Entry
+    When Clicks on the plus button
     And Set the hours '<hours>' and minutes '<minutes>'
     And Select the Crowdar Academy project on the Project Menu
     And Set the description '<description>'
@@ -19,6 +20,7 @@ Feature: Time Entries
 
 
   Scenario Outline: Discard Time Entry
+    When Clicks on the plus button
     And Set the hours '<hours>' and minutes '<minutes>'
     And Select the Crowdar Academy project on the Project Menu
     And Set the description '<description>'
@@ -32,6 +34,7 @@ Feature: Time Entries
 
 
   Scenario Outline: Successful Time Entry with date time
+    When Clicks on the plus button
     And Set the hours '<hours>' and minutes '<minutes>'
     And Set the start date <startDate> and the end date <endDate>
     And Select the Crowdar Academy project on the Project Menu
